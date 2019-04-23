@@ -309,7 +309,7 @@ header#masthead {
     font-size: 1.1rem;
     outline: medium none;
     text-decoration: none;
-    color: #fff;
+    color: #313335;
     font-weight: 700;
 }
 
@@ -391,7 +391,7 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
 
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover,
 body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
-    color: #fff;
+    color: #313335;
     font-weight: 600;
     /*background: #f9f9f9;*/
 }
