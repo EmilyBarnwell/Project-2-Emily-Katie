@@ -217,7 +217,7 @@ h4,
 h5,
 h6 {
     clear: both;
-    color: #24292e;
+    color: #313335;
     font-weight: 600;
     margin-top: 24px;
     margin-bottom: 15px;
@@ -255,11 +255,11 @@ p {
 
 h1.entry-title {
     font-size: 1.31rem;
-    border-bottom: 1px solid #eaecef;
+    border-bottom: 1px solid #313335;
 }
 
 h2.entry-title {
-    border-bottom: 1px solid #eaecef;
+    border-bottom: 1px solid #313335;
 }
 
 h3.widget-title {
@@ -959,7 +959,7 @@ body:not(.theme-preset-active) footer#colophon {
 }
 
 .navbar-dark .site-info {
-    color: #fff;
+    color: #313335;
 }
 
 .copyright {
