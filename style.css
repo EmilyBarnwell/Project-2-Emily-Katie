@@ -954,7 +954,7 @@ footer#colophon {
 
 body:not(.theme-preset-active) footer#colophon {
     color: #313335;
-    background-color: #caccce;
+    background-color: #fff;
 }
 
 .navbar-dark .site-info {
