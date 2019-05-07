@@ -324,7 +324,7 @@ header#masthead {
     position: center;
     padding-top: 5rem;
     padding-bottom: 0;
-    text-align: center;
+    text-align: left;
     font-size: 1.25rem;
     background-size: cover !important;
 }

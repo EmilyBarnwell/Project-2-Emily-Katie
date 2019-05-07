@@ -14,18 +14,18 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-8">
-		<main id="main" class="site-main" role="main">
+<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+    <main id="main" class="site-main" role="main">
 
-		<?php
+        <?php
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+        <header>
+            <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+        </header>
 
-			<?php
+        <?php
 			endif;
 
 			/* Start the Loop */
@@ -48,8 +48,8 @@ get_header(); ?>
 
 		endif; ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+    </main><!-- #main -->
+</section><!-- #primary -->
 
 <?php
 get_sidebar();
