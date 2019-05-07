@@ -39,7 +39,8 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 --------------------------------------------------------------*/
 body {
     margin: 0;
-    -webkit-font-smoothing: auto;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 article,
@@ -77,11 +78,13 @@ template {
 
 a {
     background-color: transparent;
+    color: #9c9c9c;
 }
 
 a:active,
 a:hover {
     outline: 0;
+    color: #313335;
 }
 
 dfn {
@@ -101,7 +104,7 @@ sub,
 sup {
     font-size: 75%;
     line-height: 0;
-    position: relative;
+    position: center;
     vertical-align: baseline;
 }
 
@@ -318,7 +321,7 @@ header#masthead {
 }
 
 #page-sub-header {
-    position: relative;
+    position: center;
     padding-top: 5rem;
     padding-bottom: 0;
     text-align: center;
@@ -382,7 +385,7 @@ a.page-scroller {
 }
 
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
-    color: #caccce;
+    color: #9c9c9c;
     padding: 0.5rem;
     font-weight: 500;
     font-size: 0.875rem;
@@ -699,13 +702,13 @@ a img.aligncenter {
     font-family: "Font Awesome\ 5 Free";
     font-size: 1.563rem;
     left: -2.5rem;
-    position: absolute;
+    position: center;
     top: 0.375rem;
     font-weight: 900;
 }
 
 .sticky .entry-title {
-    position: relative;
+    position: center;
 }
 
 .single .byline,

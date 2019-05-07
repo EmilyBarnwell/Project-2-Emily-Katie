@@ -26,8 +26,8 @@ if ( post_password_required() ) {
     // You can start editing here -- including this comment!
     if ( have_comments() ) : ?>
 
-        <h2 class="comments-title">
-            <?php
+    <h2 class="comments-title">
+        <?php
             $comments_number = get_comments_number();
             if ( '1' === $comments_number ) {
                 /* translators: %s: post title */
@@ -47,38 +47,38 @@ if ( post_password_required() ) {
                 );
             }
             ?>
-        </h2><!-- .comments-title -->
+    </h2><!-- .comments-title -->
 
 
-        <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-            <nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-                <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'wp-bootstrap-starter' ); ?></h2>
-                <div class="nav-links">
+    <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
+    <nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
+        <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'wp-bootstrap-starter' ); ?></h2>
+        <div class="nav-links">
 
-                    <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'wp-bootstrap-starter' ) ); ?></div>
-                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'wp-bootstrap-starter' ) ); ?></div>
+            <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'wp-bootstrap-starter' ) ); ?></div>
+            <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'wp-bootstrap-starter' ) ); ?></div>
 
-                </div><!-- .nav-links -->
-            </nav><!-- #comment-nav-above -->
-        <?php endif; // Check for comment navigation. ?>
+        </div><!-- .nav-links -->
+    </nav><!-- #comment-nav-above -->
+    <?php endif; // Check for comment navigation. ?>
 
-        <ul class="comment-list">
-            <?php
+    <ul class="comment-list">
+        <?php
             wp_list_comments( array( 'callback' => 'wp_bootstrap_starter_comment', 'avatar_size' => 50 ));
             ?>
-        </ul><!-- .comment-list -->
+    </ul><!-- .comment-list -->
 
-        <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-            <nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-                <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'wp-bootstrap-starter' ); ?></h2>
-                <div class="nav-links">
+    <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
+    <nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
+        <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'wp-bootstrap-starter' ); ?></h2>
+        <div class="nav-links">
 
-                    <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'wp-bootstrap-starter' ) ); ?></div>
-                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'wp-bootstrap-starter' ) ); ?></div>
+            <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'wp-bootstrap-starter' ) ); ?></div>
+            <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'wp-bootstrap-starter' ) ); ?></div>
 
-                </div><!-- .nav-links -->
-            </nav><!-- #comment-nav-below -->
-            <?php
+        </div><!-- .nav-links -->
+    </nav><!-- #comment-nav-below -->
+    <?php
         endif; // Check for comment navigation.
 
     endif; // Check for have_comments().
@@ -87,8 +87,8 @@ if ( post_password_required() ) {
     // If comments are closed and there are comments, let's leave a little note, shall we?
     if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wp-bootstrap-starter' ); ?></p>
-        <?php
+    <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wp-bootstrap-starter' ); ?></p>
+    <?php
     endif; ?>
 
     <?php comment_form( $args = array(
@@ -101,10 +101,7 @@ if ( post_password_required() ) {
 
         'comment_field' =>  '<p><textarea placeholder="Start typing..." id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 
-        'comment_notes_after' => '<p class="form-allowed-tags">' .
-            __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', 'wp-bootstrap-starter' ) .
-            '</p><div class="alert alert-info">' . allowed_tags() . '</div>'
-
+       
         // So, that was the needed stuff to have bootstrap basic styles for the form elements and buttons
 
         // Basically you can edit everything here!
